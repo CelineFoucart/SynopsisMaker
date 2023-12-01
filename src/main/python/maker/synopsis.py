@@ -16,7 +16,6 @@ class Synopsis:
         self.characters = characters if characters else []
         self.uuid = uuid if uuid else str(uuid4())
 
-
     def __repr__(self) -> str:
         return f"{self.title} ({self.uuid})"
 
@@ -55,4 +54,3 @@ class Event:
 
     def validate(self) -> bool:
         return True
-
